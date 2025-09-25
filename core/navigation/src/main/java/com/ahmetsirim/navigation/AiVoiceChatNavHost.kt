@@ -16,7 +16,7 @@ import com.ahmetsirim.navigation.history.setupHistoryUsageFlow
 import com.ahmetsirim.navigation.settings.setupSettingsUsageFlow
 
 /**
- * Main navigation host for the UnicoCaseAiVoiceChat application.
+ * Main navigation host for the AiVoiceChat application.
  *
  * This composable serves as the central navigation hub for the entire application,
  * implementing a modular navigation structure that coordinates between different feature modules.
@@ -34,7 +34,7 @@ import com.ahmetsirim.navigation.settings.setupSettingsUsageFlow
  * @param modifier Modifier to be applied to the NavHost composable
  */
 @Composable
-fun UnicoCaseAiVoiceChatNavHost(modifier: Modifier = Modifier) {
+fun AiVoiceChatNavHost(modifier: Modifier = Modifier) {
     val navController = rememberNavController().apply {
         if (!BuildConfig.DEBUG) return@apply
 

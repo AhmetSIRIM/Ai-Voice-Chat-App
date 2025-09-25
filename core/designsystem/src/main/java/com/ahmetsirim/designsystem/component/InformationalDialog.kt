@@ -27,7 +27,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.ahmetsirim.designsystem.R
-import com.ahmetsirim.designsystem.theme.UnicoCaseAiVoiceChatAppTheme
+import com.ahmetsirim.designsystem.theme.AiVoiceChatAppTheme
 import com.ahmetsirim.designsystem.utility.ResponsivenessCheckerPreview
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -92,7 +92,7 @@ fun InformationalDialog(
 @Composable
 @Preview
 private fun InformationalDialogPreview() {
-    UnicoCaseAiVoiceChatAppTheme {
+    AiVoiceChatAppTheme {
         Column(
             modifier = Modifier
                 .padding(8.dp)

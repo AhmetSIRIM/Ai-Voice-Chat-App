@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UnicoCaseAiVoiceChatApp"
+rootProject.name = "AiVoiceChatApp"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 

@@ -1,11 +1,11 @@
-package com.ahmetsirim.unicocaseaivoicechatapp.ui
+package com.ahmetsirim.aivoicechatapp.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.ahmetsirim.designsystem.theme.UnicoCaseAiVoiceChatAppTheme
-import com.ahmetsirim.navigation.UnicoCaseAiVoiceChatNavHost
+import com.ahmetsirim.designsystem.theme.AiVoiceChatAppTheme
+import com.ahmetsirim.navigation.AiVoiceChatNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -14,8 +14,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            UnicoCaseAiVoiceChatAppTheme {
-                UnicoCaseAiVoiceChatNavHost()
+            AiVoiceChatAppTheme {
+                AiVoiceChatNavHost()
             }
         }
     }

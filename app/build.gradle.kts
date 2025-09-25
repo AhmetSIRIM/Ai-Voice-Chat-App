@@ -12,7 +12,7 @@ plugins {
 }
 
 android {
-    namespace = "com.ahmetsirim.unicocaseaivoicechatapp"
+    namespace = "com.ahmetsirim.aivoicechatapp"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -86,33 +86,6 @@ dependencies {
 
     // Tools (Timber)
     implementation(libs.timber)
-}
-
-tasks.register<JacocoReport>("jacocoTestReport") {
-    dependsOn("testDebugUnitTest")
-
-    reports {
-        xml.required.set(true)
-        html.required.set(true)
-    }
-
-    val fileFilter = listOf(
-        "**/R.class",
-        "**/R\$*.class",
-        "**/BuildConfig.*",
-        "**/Manifest*.*"
-    )
-
-    val debugTree = fileTree("${layout.buildDirectory}/intermediates/javac/debug") {
-        exclude(fileFilter)
-    }
-    val kotlinDebugTree = fileTree("${layout.buildDirectory}/tmp/kotlin-classes/debug") {
-        exclude(fileFilter)
-    }
-
-    classDirectories.setFrom(files(debugTree, kotlinDebugTree))
-    sourceDirectories.setFrom(files("src/main/java", "src/main/kotlin"))
-    executionData.setFrom(files("${layout.buildDirectory}/jacoco/testDebugUnitTest.exec"))
 }
 
 configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {

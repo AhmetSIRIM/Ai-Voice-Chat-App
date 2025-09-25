@@ -8,12 +8,12 @@ import timber.log.Timber
  * Useful for debugging in method chains without breaking the flow.
  *
  * @param message The message to log (defaults to object's toString())
- * @param tag The log tag (defaults to "UnicoCaseDebug")
+ * @param tag The log tag (defaults to "Debug")
  * @return The original object for chaining
  */
 fun <T> T.logDebugThenReturnSimply(
     message: String = this.toString(),
-    tag: String = "UnicoCaseDebug"
+    tag: String = "Debug"
 ) = also {
     Timber.tag(
         tag
