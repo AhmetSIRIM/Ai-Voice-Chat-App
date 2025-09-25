@@ -1,4 +1,4 @@
-name: Unico Case Ai Voice Chat App CI & CD Pipeline
+name: Ai Voice Chat App CI & CD Pipeline
 
 on:
   workflow_dispatch:

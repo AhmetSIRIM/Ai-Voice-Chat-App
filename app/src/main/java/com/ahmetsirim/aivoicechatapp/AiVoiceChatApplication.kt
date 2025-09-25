@@ -1,11 +1,11 @@
-package com.ahmetsirim.unicocaseaivoicechatapp
+package com.ahmetsirim.aivoicechatapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 
 @HiltAndroidApp
-class UnicoCaseAiVoiceChatApplication : Application() {
+class AiVoiceChatApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()

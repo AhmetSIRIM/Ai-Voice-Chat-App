@@ -87,13 +87,13 @@ private val darkScheme = darkColorScheme(
 )
 
 @Composable
-fun UnicoCaseAiVoiceChatAppTheme(
+fun AiVoiceChatAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
-    val unicoCaseAiVoiceChatAppColorScheme = when {
+    val aiVoiceChatAppColorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
@@ -104,8 +104,8 @@ fun UnicoCaseAiVoiceChatAppTheme(
     }
 
     MaterialTheme(
-        colorScheme = unicoCaseAiVoiceChatAppColorScheme,
-        typography = unicoCaseAiVoiceChatAppTypography,
+        colorScheme = aiVoiceChatAppColorScheme,
+        typography = aiVoiceChatAppTypography,
         content = content
     )
 }
